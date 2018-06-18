@@ -1,102 +1,123 @@
 /*-------- Global --------*/
-*{
+ *{
   margin: 0;
   padding: 0;
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-}
-.clearfix::after{
+ }
+
+ .clearfix::after{
   content: "";
   clear: both;
   display: table;
-}
-html{
-  font-family: cursive;
+ }
+
+ html{
+  font-family: circular std,cursive;
   font-weight: 100;
-}
-body{
+ }
+
+ body{
   width: 80%;
   margin: auto;
+ }
 
-}
-.blue{
+ .blue{
   color: #027BFF;
-}
-h1{
+ }
+
+ h1{
   font-size: 40px;
   font-weight: 400;
   color: #17191A;
-}
-h2{
+ }
+
+ h2{
     font-size: 35px;
     font-weight:400;
     color: #17191A;
-}
+ }
+
 h5{
     font-size: 20px;
     margin-top: 10px;
     color: #17191A;
-}
-p{
+ }
+
+ p{
   color:#8F9EA5;
   font-weight: 100;
   opacity: 0.8;
   margin-top: 10px;
   font-size: 20px;
-}
-a{
+ }
+
+ a{
   text-decoration:none;
-}
-ul{
+ }
+
+ ul{
   list-style-type: none;
   margin-top: 30px;
   line-height: 30px;
-}
-img:hover{
+ }
 
-}
-/*-------- Nav --------*/
-.nav{
+ .wrap{
+  position: relative;
+ }
+
+ /*-------- Nav --------*/
+ .nav{
   display: flex;
   align-items: center;
   height: 100px;
-}
-.navicon{
+ }
+
+ .navicon{
   flex: 1;
-}
-.navicon{
+ }
+
+ .navicon{
   text-align: right;
-}
-.navicon a,.contactme a,.contactme img{
+ }
+
+ .navicon a,.contactme a,.contactme img{
   display: inline-block;
   vertical-align: middle;
-}
-.navicon a{
+ }
+
+ .navicon a{
   margin-left: 40px;
-}
-.contactme a{
+ }
+
+ .contactme a{
   color: #0278FF;
-}
-.contactme img{
+ }
+
+ .contactme img{
   margin-right: 10px;
-}
+ }
+
 
 /*-------- Landing --------*/
-.landing{
+ .landing{
   height: 77vh;
   position: relative;
   margin-bottom: 6em;
-}
-.landingWapper{
+ }
+
+ .landingWapper{
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-}
-.landingL{
+ }
+
+ .landingL{
   margin-top: 4em;
-}
+ }
+
 @media screen and (max-width:517px){
   .landingWapper{
      flex-direction: row-reverse;
@@ -112,131 +133,143 @@ img:hover{
   .landing{
     height: 163vh;
   }
-}
-.landingR img{
+ }
+
+ .landingR img{
   border-radius: 50%;
   -webkit-box-shadow: 76px 24px 73px -10px rgba(2,120,255,0.7);
   -moz-box-shadow: 76px 24px 73px -10px rgba(2,120,255,0.7);
   box-shadow: 76px 24px 73px -10px rgba(2,120,255,0.7);
-}
-.landingR img:hover{
+ }
+
+ .landingR img:hover{
   transform: scale(1.2);
   transition: all .4s ease-in-out;
-}
-.scroll{
+ }
+
+ .scroll{
   position: absolute;
   bottom: 100px;
   left: 0;
   right: 0;
   margin: auto;
-}
-.scroll:hover{
+ }
+
+ .scroll:hover{
   transition: all .2s ease-in-out;
   transform: scale(1.8);
-}
+ }
+
 /*-------- Skills --------*/
-.skills{
+ .skills{
   text-align: center;
   margin-bottom: 16.4em;
-}
-.skills p{
+ }
+ .skills p{
   margin-bottom: 30px;
-}
-.skills>.programs>img{
+ }
+ .skills>.programs>img{
   width: 10%;
-}
-.skills>.programs>img:hover{
+ }
+ .skills>.programs>img:hover{
   transition: all .2s ease-in-out;
   transform: scale(1.2);
-}
+ }
 /*-------- Showcase 1 --------*/
-.work{
+ .work{
   width: 100%;
   position: relative;
   margin-bottom: 20em;
-}
-.work>.workShow{
+ }
+ .work>.workShow{
   position: absolute;
   top:85px;
-}
-.work>.workShow>.underline{
+ }
+ .work>.workShow>.underline{
   display: block;
   height: 3px;
   width: 61px;
   margin-top: 5px;
   background-color: #0278FF;
-}
-.work>.workimg{
+ }
+ .work>.workimg{
   width: 85%;
   float: right;
   -webkit-box-shadow: 13px 2px 15px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 13px 2px 15px -6px rgba(0,0,0,0.75);
   box-shadow: 13px 2px 15px -6px rgba(0,0,0,0.75);
-}
-.work ul{
+ }
+ .work ul{
   position: absolute;
   bottom: 0;
   right: 86%;
-}
-.work ul li{
+ }
+
+ .work ul li{
   margin-top: 20%;
-}
+ }
+
+
 /*-------- Work 02 --------*/
-.work2{
+ .work2{
   position: relative;
   width: 100%;
   margin-bottom: 20em;
-}
-.work2>.workShow2{
+ }
+
+ .work2>.workShow2{
   position: absolute;
   top: 85px;
   right: 0;
   text-align: right;
-}
-.work2>.workShow2>.underline{
+ }
+
+ .work2>.workShow2>.underline{
   display: block;
   height: 3px;
   width: 61px;
   margin-top: 5px;
   background-color: #0278FF;
   float:right;
-}
-.work2>.workimg{
+ }
+
+ .work2>.workimg{
   width: 85%;
   float: left;
   -webkit-box-shadow: 13px 2px 15px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 13px 2px 15px -6px rgba(0,0,0,0.75);
   box-shadow: 13px 2px 15px -6px rgba(0,0,0,0.75);
-}
-.work2>ul{
+ }
+
+ .work2>ul{
   position: absolute;
   bottom: 0;
   left: 86%;
+ }
 
-}
-.work2>ul>li{
+ .work2>ul>li{
   margin-top: 20px;
-}
+ }
 
 /*-------- Work 01 and 02 --------*/
-.work>ul>li>a>img:hover ,.work2>ul>li>a>img:hover{
+ .work>ul>li>a>img:hover ,.work2>ul>li>a>img:hover{
   transform: scale(1.2);
   transition: all .4s ease-in-out;
-}
-
+ }
 
 /*-------- Footer --------*/
-.footer{
+ .footer{
   margin-top: 7em;
   margin-bottom: 7em;
   text-align: center;
   border-top: 3px dashed #17191a;
   border-bottom: 3px dashed #17191a;
-}
-.underlinefooter{
+ }
+
+ .underlinefooter{
   display: block;
   height: 3px;
   width: 41px;
   margin: 5px auto 5px auto;
   background-color: #027BFF;
-}
+ }
