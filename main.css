@@ -1,4 +1,3 @@
-/*-------- Global --------*/
 /*-------- CSS RESET --------*/
  *{
   margin: 0;
@@ -14,6 +13,7 @@
   clear: both;
   display: table;
  }
+/*-------- Global --------*/
 
  html{
   font-family: circular std,cursive;
